@@ -1,6 +1,10 @@
 spring:
   appliction:
-    name: netflix-eureka-naming-server
+    name: netflixeureka
+  security:
+    user:
+      name: partha
+      password: password123
 
 server:
   port: 8761
