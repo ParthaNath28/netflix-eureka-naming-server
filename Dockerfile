@@ -1,4 +1,7 @@
 FROM openjdk:11.0.7-jre-slim
+FROM maven:3.6-alpine as builder
+
+RUN mvn package
 
 COPY target/netflix-eureka-naming-server-0.0.1-SNAPSHOT.jar DiscoveryService.jar
 
